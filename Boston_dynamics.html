@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .header
+    {
+        display:flex;
+        padding:25px;
+        padding-bottom: 10px;
+    }
+    .navitems
+    {
+        list-style: none;
+        padding-inline: 40px;
+        cursor: pointer;
+    }
+    .navbar
+    {
+        position:absolute;
+        right:300px;
+    }
+    .navlink
+    {
+        text-decoration: none;
+    }
+    #logoimg
+    {
+        width:15%;
+        height:25%;
+        position: relative;
+        left: 200px;
+    }
+    .navlist
+    {
+        display:flex;
+    }
+    .msg
+    {
+        display:flex;
+        background-color: #00355A;
+        align-items: center center;
+        justify-content:center;
+
+    }
+    #morebtn
+    {
+        color:white;
+        border-radius: 5px;
+        border-color: white;
+        background-color: #00355A;
+        margin-left: 200px;
+        margin-top: 10px;
+        height:50px;
+    }
+    #morebtn:hover
+    {
+        color: #00355A;
+        background-color: white;
+        cursor: pointer;
+    }
+    .spotimg
+    {
+        background-image: url('https://www.bostondynamics.com/sites/default/files/2020-10/spot-masthead-mobile.jpg');
+        align-items: center center;
+        height: 350px;
+        background-repeat:no-repeat;
+    }
+    .content
+    {
+        color: white;
+        margin-left:300px;
+        position: relative;
+        top: 20px;
+        font: size 40px;
+    }
+    #spotbtn
+    {
+        background-image: url('https://www.bostondynamics.com/sites/default/files/2020-10/spot-masthead-mobile.jpg');
+        cursor: pointer;
+        padding: 10px;
+    }
+    #spotbtn:hover
+    {
+        color: #00355A;
+        background-color: white;
+        background-image:none;
+    }
+    .intro
+    {
+        display:flex;
+        align-items:center center;
+        justify-content:center;
+        text-align: center;
+    }
+    .example
+    {
+        margin-inline: 20px;
+        background-color: aqua;
+        background-repeat: no-repeat;
+        padding:50px;
+        padding-top: 0px;
+        margin-top: 100px;
+        cursor: pointer;
+    }
+    .topic
+    {
+        position: relative;
+        top:-150px;
+    }
+    .footer
+    {
+        display:flex;
+    }
+        .footitems
+        {
+            list-style: none;
+            cursor: pointer;
+        }
+        .footitems:hover
+        {
+            color: grey;
+        }
+        .footimg
+        {
+            background-color: rgb(17, 125, 226);
+            height: 400px;
+            width: 53%;
+        }
+        .options
+        {
+            display:flex;
+            background-color:#00355A;
+            color:white;
+            height: 400px;
+            position: absolute;
+            right:0px;
+        }
+        .submenu
+        {
+            display: none;
+        }
+        .navitems:hover .submenu
+        {
+            display:block;
+        }
+        .submenu ul li
+        {
+            list-style: none;
+            color:white;
+            padding:15px;
+        }
+        .submenu ul
+        {
+            background-color:#002144;
+            align-items:center center;
+        }
+        .submenu ul li:hover
+        {
+            background-color:rgb(65, 103, 185);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.bostondynamics.com/themes/custom/isovera/logo.svg" alt="" id="logoimg">
+        <nav class="navbar">
+            <ul class="navlist">
+                <li class="navitems" Onclick="window.location.href='/products'">PRODUCTS
+                <div class="submenu"><ul><li Onclick="window.location.href='/spot'">SPOT</a><div class="submenu"><ul><li Onclick="window.location.href='/arm'">ARM</li>
+                <li Onclick="window.location.href='/payloads'">PAYLOADS</li>
+                </ul></div></li>
+                <li Onclick="window.location.href='/stretch'">STRETCH</li>
+                <li Onclick="window.location.href='/pick'">PICK</li></ul></div></li>
+                <li class="navitems"Onclick="window.location.href='/solutions'">SOLUTIONS</a><div class="submenu"><ul><li Onclick="window.location.href='/inspection'">INSPECTION</li>
+                <li Onclick="window.location.href='/construction'">CONSTRUCTION</li>
+                <li Onclick="window.location.href='/warehouse'">WAREHOUSE<br>AUTOMATION</li></ul></div></li>
+                <li class="navitems"Onclick="window.location.href='/resources'">RESOURCES</a><div class="submenu"><ul><li Onclick="window.location.href='/studies'">CASE STUDIES</li>
+                <li Onclick="window.location.href='/webinars'">WEBINARS</li>
+                <li Onclick="window.location.href='/blog'">BLOG</li><li Onclick="window.location.href='/support'">SUPPORT<br>CENTER</li><li Onclick="window.location.href='/documentation'">DEVELOPER<br>DOCUMENTATION</li></ul></div></li>
+                <li class="navitems"Onclick="window.location.href='/company'">COMPANY</a><div class="submenu"><ul><li Onclick="window.location.href='/about'">ABOUT
+                <li Onclick="window.location.href='/careers'">CAREERS</li>
+                <li Onclick="window.location.href='/news'">NEWS</li></ul></div></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div class="video">
+        <video autoplay='autoplay' loop='loop' width=100% height=25% src="https://www.bostondynamics.com/sites/default/files/background_videos/2021-04/web-banner.mp4"></video>
+    </div>
+    <br>
+    <div class="msg">
+        <h2 style="color:white;">Meet our newest robot Stretch, designed for warehouse automation.</h2>
+        <button id="morebtn">LEARN MORE</button>
+    </div><br>
+    <div class="spotimg">
+        <h1 class="content" style="font-size: 50px;">
+            Spot
+        </h1><br>
+        <p class="content">Automate data capture<br> and ispection.</p><br>
+        <button id="spotbtn" class="content">SEE SPOT</button>
+    </div>
+    <br><br>
+    <div class="intro">
+        <div class="example"><h1 class="topic">Introducing  the<br>Spot Arm</h1><p class="topic" style="color:blue">LEARN MORE></p><br><img src="https://www.bostondynamics.com/sites/default/files/2021-02/left-column-660x480.png"></div>
+        <div class="example"><h1 class="topic">Inspection<br>Solution</h1><p class="topic" style="color:blue">LEARN MORE></p><br><img src="https://www.bostondynamics.com/sites/default/files/2021-02/right-column-660x480.png"></div>
+    </div><br>
+    <div class="spotimg">
+        <h1 class="content" style="font-size: 50px;">
+            Stretch
+        </h1><br>
+        <p class="content">Mobile, automated case handling for more<br>efficient warehouse operations.</p><br>
+        <button id="spotbtn" class="content">LEARN MORE</button><br>
+    <div class="spotimg">
+        <h1 class="content" style="font-size: 50px;">
+            Pick
+        </h1><br>
+        <p class="content">Automate complex depalletizing using a<br>machine learning vision system.</p><br>
+        <button id="spotbtn" class="content">LEARN MORE</button><br>
+    <div class="spotimg">
+        <h1 class="content" style="font-size: 50px;">
+            Atlas
+        </h1><br>
+        <p class="content">Discover the world's most advanced<br>humanoid robot.</p><br>
+        <button id="spotbtn" class="content">LEARN MORE</button>
+    </div><br>
+    <div class="footer">
+        <div class="footimg"><img src="https://www.bostondynamics.com/themes/custom/isovera/images/footer-logo.svg"></div>
+        <div class="options">
+        <ul class="footlist">
+        <h4>COMPANY</h4>
+        <li class="footitems">ABOUT</li>
+        <li class="footitems">CAREERS</li>
+        <li class="footitems">NEWS</li>
+        <li class="footitems">RESEARCH</li>
+        <li class="footitems">CONTACT</li>
+    </ul>
+    <ul class="footlist">
+        <h4>PRODUCTS</h4>
+        <li class="footitems">SPOT</li>
+        <li class="footitems">SPOT ARM</li>
+        <li class="footitems">STRETCH</li>
+        <li class="footitems">PICK</li>
+    </ul>
+    <ul class="footlist">
+        <h4>SOLUTIONS</h4>
+        <li class="footitems">INSPECTION</li>
+        <li class="footitems">CONSTRUCTION</li>
+        <li class="footitems">WAREHOUSE</li>
+        <li class="footitems">AUTOMATION</li>
+    </ul>
+    <ul class="footlist">
+        <h4>SHOP</h4>
+        <li class="footitems">SPOT</li>
+        <li class="footitems">PAYLOADS</li>
+        <li class="footitems">EXTRAS</li>
+    </ul>
+    <ul class="footlist">
+        <h4>RESOURCES</h4>
+        <li class="footitems">CASE STUDIES</li>
+        <li class="footitems">WEBINARS</li>
+        <li class="footitems">BLOG</li>
+        <li class="footitems">SUPPORT</li>
+        <li class="footitems">CENTER</li>
+        <li class="footitems">DEVELOPER</li>
+        <li class="footitems">DOCUMENTATION</li>
+    </ul>
+</div>
+</div>
+</body>
+</html>
